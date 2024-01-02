@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+/* ---- Home and Banner Section ---- */
+
+.Heading {
+    background-color: black;
+}
+
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.menu ul{}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu ul li a:hover{
+    color: tomato;
+    text-decoration: underline;
+    background-color: rgba(180, 178, 178, 0.418);
+}
+
+/* Hero Section */
+
+.Hero{
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+    z-index: 9;
+}
+.Hero::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+
+    background-color: rgba(0, 0, 0, 0.316);
+}
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .title h1{
+    font-size: 45px;
+}
+.banner .title h2{
+    font-size: 25px;
+}
+
+/* About Section */
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.About{
+    margin: 150px 0px;
+}
+.About .profile-picture{
+    width: 30%;
+    float: left;
+}
+.About .about-picture{
+    width: 65%;
+    float: right;
+}
+.profile-picture img{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.about-picture h2{
+    margin-bottom: 50px;
+}
+.about-picture p{
+    font-weight: 500;
+}
+.About a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff2b4a;
+    padding: 12px 50px 10px;
+    border: 2px solid #ff2b4a;
+    transition: .5s;
+    margin: 25px 0px;
+    border-radius: 3px;
+}
+.About a:hover{
+    color: #ff2b4a;
+    border: 2px solid #ff2b4a;
+    background-color: #fff;
+}
+
+/* Process Section */
+section.Process {
+    text-align: center;
+    margin: 30px;
+}
+.Process h4{
+    font-weight: 400;
+}
+.system{
+    display: flex;
+    justify-content: space-evenly;
+}
+.system .minwid {
+    width: 250px;
+    align-items: center;
+    display: flex;
+    padding: 80px 0px;
+    flex-direction: column;
+    color: white;
+    border-radius: 5px;
+}
+.system .minwid i{
+    font-size: 40px;
+}
+
+.system .design{
+    background-color: #10c6fc;
+}
+.system .development{
+    background-color: #835aeb;
+}
+.system .testing{
+    background-color: #002453;
+}
+.system .launch{
+    background-color: #ff2b4a;
+}
+
+/* Experience */
+
+.Experience{
+    background-image: url(experience.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.two-side{
+    padding: 80px 0px;
+    color: #ededed;
+}
+.two-side .left-side{
+    float: left;
+    width: 49%;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.707);
+}
+.two-side .right-side{
+    float: right    ;
+    width: 49%;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.707);
+}
+.two-side .right-side .right-des-top, .left-des-top{
+    border-bottom: 2px solid #fff;
+}
+
+.two-side h4, h6, p{
+    margin: 20px 0px;
+}
+
+/* Testominal */
+.Testominal{
+    background-color:#cacaca;
+    padding: 50px 0px;
+}
+.quote{
+    float: left;
+    width: 49%;
+}
+.quote .icon {
+    font-size: 120px;
+    color: rgba(128, 128, 128, 0.719);
+}
+.sign img{
+    width: 140px;
+}
+.Testominal .image{
+    float: right;
+    width: 49%;
+}
+
+/* Contact-Section */
+
+.Contact{
+    background-image: url(contact.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.padding {
+    padding: 10px;
+    margin: 10px 0px ;
+    font-size: 15px;
+}
+.submit input.padding{
+    background-color:#ff2b4a;
+    border-radius: 5px;
+    border: 2px solid #ff2b4a;
+    padding:10px 15px;
+}
+.submit input.padding:hover{
+    background-color:#ffffff;
+}
+.right-des a {
+    color: #fff;
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+.right-des a:hover {
+    color: tomato;
+}
+/* Footer Section */
+
+.Footer{
+    background-color: #222222;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.Footer .social-icon ul{}
+.Footer .social-icon ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.Footer .social-icon ul li a{
+    color: #fff;
+    padding: 10px ;
+}
+.Footer .social-icon ul li a:hover{
+    color: tomato;
+}
+.copyright p{
+    color: #fff;
+}

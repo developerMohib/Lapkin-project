@@ -1,0 +1,91 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 992px;
+    }
+    .Menu {
+        justify-content: space-around;
+    }
+    .banner {
+        height: 70vh;
+    }
+    br.break {
+        display: none;
+    }
+    .About .profile-picture {
+        width: 33%;
+    }
+    .system .minwid {
+        width: 225px;
+        padding: 60px 0px;
+    }
+    .quote {
+        width: 45%;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 740px;
+    }
+    .banner {
+        height: 65vh;
+    }
+    .About {
+        margin: 90px 0px;
+    }
+    .about-picture h2 {
+        margin-bottom: 20px;
+    }
+    br.dj_brk {
+        display: none;
+    }
+    .system .minwid {
+        width: 150px;
+        padding: 30px 0px;
+    }
+    .system .minwid i {
+        font-size: 30px;
+    }
+    .quote .icon {
+        font-size: 75px;
+    }
+}
+@media (max-width: 768px) {
+    .banner {
+        height: 45vh;
+    }
+    .banner .title h1 {
+        font-size: 30px;
+    }
+    .banner .title h2 {
+        font-size: 18px;
+    }
+    .About .profile-picture {
+        width: 100%;
+        margin: auto;
+    }
+    .About .about-picture {
+        width: 88%;
+    }
+    .system {
+        display: block;
+    }
+    .Testominal .image {
+        width: 100%;
+    }
+    .two-side {
+        padding:0px;
+    }
+    .two-side .left-side {
+        float: none;
+        width: 100%;
+    }
+    .two-side .right-side {
+        float: none;
+        width: 100%;
+    }
+    .Footer {
+        padding: 20px 0px;
+    }
+}
